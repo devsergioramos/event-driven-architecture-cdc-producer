@@ -1,0 +1,5 @@
+id,actual_address,next_address,status
+1,"Sao Paulo/SP",,"Objeto postado"
+2,"Sao Paulo/SP","Varzea Grande/MT","Objeto em transferência"
+3,"Varzea Grande/MT","Sinop/MT","Objeto em transferência"
+4,"Sinop/MT",,"Saiu para entrega ao destinatário"
