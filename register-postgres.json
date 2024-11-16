@@ -1,0 +1,14 @@
+{
+    "name": "postgres-connector",
+    "config": {
+        "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+        "tasks.max": "1",
+        "database.hostname": "postgres",
+        "database.port": "5432",
+        "database.user": "erp_user",
+        "database.password": "erp_pass",
+        "database.dbname" : "erp_db",
+        "topic.prefix": "dbserver1",
+        "schema.include.list": "public"
+    }
+}
