@@ -16,12 +16,7 @@
 
 ## Architectural Design
 
-### Medium Article
-This project is part of an article on Medium discussing the implementation of coroutines in Kotlin to solve performance latency issues. [You can read the full article here.]()
-
-#### Solution Architecture
-
-This project simulates the flow described in the Medium article, focusing on PART 1 and PART 2 of the architectural design:  
+![img_1.png](data/img_1.png)
 
 ##### PART 1: Recording Movements in the Logistics ERP:  
 
@@ -37,8 +32,16 @@ This project simulates the flow described in the Medium article, focusing on PAR
 * The Integrator microservice, written in Kotlin, consumes messages from the package_moviment_topic in Kafka and sends status updates to customer APIs.
 * Customer APIs have varying latencies, with Customer 1 and Customer 3 responding in about 300ms, while Customer 2 can take up to 30 seconds.
 
-##### Relation to the Article
-This project sets up the scenario for PART 1 and PART 2, creating a chaotic environment with multiple data transactions via CDC, moving statuses to the Integrator microservice. The next implementation will involve the Integrator microservice, written in Kotlin, to consume messages from the package_moviment_topic and send status updates to customer APIs.  By following this project, you can understand the initial setup and data flow, preparing for the subsequent implementation of the Integrator microservice as described in the Medium article.
+##### Medium Article
+
+This project is part of a Medium article discussing the use of coroutines in Kotlin to address latency and performance issues. [Read the full article here.]()
+
+The project sets up the scenario for PARTS 1 and 2, creating a complex environment with multiple data transactions via CDC, moving statuses to the **Integrator** microservice.
+
+In the next phase, the **Integrator**, written in Kotlin, will consume messages from the `package_moviment_topic` and send status updates to customer APIs.
+
+Follow this project to understand the initial setup and data flow, preparing for the **Integrator** implementation detailed in the article.
+
 
 ## Description
 Make a several data to store in postgresql database. \
@@ -111,9 +114,6 @@ make start-monitoring
 ```
 
 ## Documentation
-Add diagrams and design docs related to this service to the docs folder.
-
-![img_1.png](data/img_1.png)
 
 Documentation about docker compose CDC, click [here](https://github.com/debezium/debezium-examples) \
 Asyncpg client documentation, click [here](https://github.com/MagicStack/asyncpg)
