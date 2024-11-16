@@ -89,6 +89,9 @@ make down
 After setup your docker containers and make sure that the Debezium connector is running \
 you can generate data to insert rows in the database.
 
+You need to have a Python environment configured to run the script. \
+[You can use a virtual environment ](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#create-and-use-virtual-environments)
+
 **Install Python Requirements**
 ```sh
 make pip-install
